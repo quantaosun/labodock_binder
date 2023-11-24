@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
 # Alternatively binder launched directly from GitHub (latest version)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/quantaosun/labodock_binder/HEAD?labpath=webdock.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/quantaosun/labodock_binder/HEAD?labpath=wedock.ipynb)
 
 
 ## Introduction
