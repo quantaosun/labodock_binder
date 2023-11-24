@@ -1,5 +1,6 @@
 # labodock_binder
- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.10202646/)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10202646.svg)](https://doi.org/10.5281/zenodo.10202646)
+ [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.10202646/)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10202646.svg)](https://doi.org/10.5281/zenodo.10202646)[![version](https://img.shields.io/badge/version-0.0.0-orange)](https://github.com/quantaosun/labodock_binder/releases)
+[![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
 
 ## Introduction
