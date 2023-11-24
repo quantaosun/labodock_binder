@@ -29,3 +29,8 @@ These enhancements collectively contribute to a more user-friendly and accessibl
 The first three cells are the only thing you should modify. From the top left, click **Run** > **Run All Cells**, and the docking will start automatically. Your docked 3D interaction diagram will be at the bottom of the notebook.
 
 **wedock.ipynb does not need any manual intervention, but for wedock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
+
+## Acknowledgments
+
+- Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for Google Colab.
+- Credits to the [Binder](https://mybinder.org/) project for developing the fantastic web-browser-based interactive Jupiter notebook.
