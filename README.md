@@ -17,7 +17,7 @@ labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/
 
 These enhancements collectively contribute to a more user-friendly and accessible experience. labodock_binder emerges as a versatile and convenient tool for users worldwide, requiring only internet availability—no Google account necessary.
 
-<img width="1006" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/7da4b4b5-6b5c-4e8b-9ea2-49974a81eba1">
+<img width="775" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/d0333255-36f2-46da-a105-5290bd91a063">
 
 
 ## Usage
