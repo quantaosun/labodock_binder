@@ -18,3 +18,5 @@ These enhancements collectively contribute to a more user-friendly and accessibl
 **smiles** is the small molecule you want to dock, you can obtain this from ChemDraw, from Edit > Copy as smiles
 
 The first three cells are the only thing you should modify. From the top left, click Run > Run All Cells, and the docking will start automatically. Your docked 3D interaction diagram will be at the bottom of the notebook.
+
+**webdock.ipynb do not need any manual intervention, but for webdock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
