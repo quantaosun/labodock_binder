@@ -1,11 +1,19 @@
 cff-version: 0.0.2
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: Sun
-  given-names: Quantao
+- family-names: "Sun"
+  given-names: "Quantao"
 orcid: https://orcid.org/0009-0004-7537-2703
-title:quantaosun/labodock_binder: labodock_binder_v_0.0.2
-version: v_0.0.2
+title: "labodock_binder: labodock_binder_v_0.0.2"
+version: 0.0.2
 doi: 10.5281/zenodo.10203208
 date-released: 2023-11-24
+repository-code: https://github.com/quantaosun/labodock_binder
+keywords:
+  - "drug design"
+  - "molecular docking"
+  - "virtual screening"
+  - "web browser"
+  - "autodock vina"
+license: MIT
 url: "https://github.com/quantaosun/labodock_binder"
