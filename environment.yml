@@ -68,7 +68,7 @@ dependencies:
   #- importlib-metadata=6.8.0=pyha770c72_0
   #- importlib_metadata=6.8.0=hd8ed1ab_0
   #- importlib_resources=6.1.0=pyhd8ed1ab_0
-  - ipykernel=6.25.2=pyh2140261_0
+  #- ipykernel=6.25.2=pyh2140261_0
   #- ipython=8.16.1=pyh0d859eb_0
   #- ipython_genutils=0.2.0=py_1
   - ipywidgets=8.1.1=pyhd8ed1ab_0
@@ -81,10 +81,10 @@ dependencies:
   #- jsonschema=4.19.1=pyhd8ed1ab_0
   #- jsonschema-specifications=2023.7.1=pyhd8ed1ab_0
   #- jsonschema-with-format-nongpl=4.19.1=pyhd8ed1ab_0
-  - jupyter=1.0.0=pyhd8ed1ab_10
+  #- jupyter=1.0.0=pyhd8ed1ab_10
   #- jupyter-offlinenotebook=0.2.2=pyh1d7be83_0
-  - jupyter-resource-usage=0.7.1=pyhd8ed1ab_0
-  - jupyter_client=7.4.9=pyhd8ed1ab_0
+  #- jupyter-resource-usage=0.7.1=pyhd8ed1ab_0
+  #- jupyter_client=7.4.9=pyhd8ed1ab_0
   #- jupyter_console=6.6.3=pyhd8ed1ab_0
   #- jupyter_core=5.4.0=py310hff52083_0
   #- jupyter_events=0.7.0=pyhd8ed1ab_2
@@ -95,8 +95,8 @@ dependencies:
   #- jupyter_ydoc=0.2.4=pyhd8ed1ab_0
   #- jupyterhub-base=3.1.1=pyh2a2186d_0
   #- jupyterhub-singleuser=3.1.1=pyh2a2186d_0
-  - jupyterlab=3.6.6=pyhd8ed1ab_0
-  - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
+  #- jupyterlab=3.6.6=pyhd8ed1ab_0
+  #- jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   #- jupyterlab_server=2.25.0=pyhd8ed1ab_0
   - jupyterlab_widgets=3.0.9=pyhd8ed1ab_0
   #- keyutils=1.6.1=h166bdaf_0
