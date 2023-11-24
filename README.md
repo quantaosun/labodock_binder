@@ -32,5 +32,5 @@ The first three cells are the only thing you should modify. From the top left, c
 
 ## Acknowledgments
 
-- Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for Google Colab.
-- Credits to the [Binder](https://mybinder.org/) project for developing the fantastic web-browser-based interactive Jupiter notebook.
+- Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for docking on Google Colab.
+- Credits to the [Binder](https://mybinder.org/) project for developing the fantastic interactive Jupiter notebook used on web browsers.
