@@ -7,7 +7,7 @@ labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/
 
 **Seamless Access**: Unlike the original Google Colab login requirement, labodock_binder allows free access from Chrome, Firefox, and Safari, without the need for signup or login. This is made possible through the implementation of Binder technology (https://mybinder.org/).
 
-**Pre-built Images**: The Wedock image is pre-built. When a user clicks the link, the image is pulled from the cloud to the local browser, instead of installing all packages from scratch. This significantly accelerates the readiness for docking.
+**Pre-built Images**: The labodock_binder image is pre-built. When a user clicks the link, the image is pulled from the cloud to the local browser, instead of installing all packages from scratch. This significantly accelerates the readiness for docking.
 
 **Simplified Execution**: labodock_binder streamlines the process with one-click execution, eliminating the need for repetitive variable modifications.
 
@@ -24,4 +24,4 @@ These enhancements collectively contribute to a more user-friendly and accessibl
 
 The first three cells are the only thing you should modify. From the top left, click **Run** > **Run All Cells**, and the docking will start automatically. Your docked 3D interaction diagram will be at the bottom of the notebook.
 
-**webdock.ipynb does not need any manual intervention, but for webdock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
+**wedock.ipynb does not need any manual intervention, but for wedock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
