@@ -2,6 +2,9 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.10202646/?labpath=wedock.ipynb)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10202646.svg)](https://doi.org/10.5281/zenodo.10202646)[![version](https://img.shields.io/badge/version-0.0.1-orange)](https://github.com/quantaosun/labodock_binder/releases)
 [![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
+# Alternatively binder launched directly from GitHub (latest version)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/quantaosun/labodock_binder/HEAD?labpath=webdock.ipynb)
+
 
 ## Introduction
 labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), with a primary focus on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
