@@ -5,6 +5,22 @@
 # Alternatively binder launched directly from GitHub
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/quantaosun/labodock_binder/HEAD?labpath=wedock.ipynb)
 
+## What happens once you click the launch binder badge ?
+
+This Binder section is copied from https://discourse.jupyter.org/t/how-to-reduce-mybinder-org-repository-startup-time/4956 
+
+Each time a user clicks a Binder link, these things happen:
+
+A slot (called a “pod”) is reserved on one of the cloud machines. This takes 1-2 seconds.
+Binder looks to see if a Docker image exists for that repository
+If it doesn’t, Binder must first build the image for that repo using repo2docker (this takes time)
+Binder looks for a built image on the machine the user will use
+If it isn’t on the machine, Binder must first pull the image onto that machine (this takes time)
+Binder launches the user’s session. This includes:
+a small amount of time to start the “init pods to limit network access”,
+a few seconds for the Jupyter process to start,
+a few seconds for BinderHub to notice,
+and finally, your browser needs to follow the redirect.
 
 ## Introduction
 labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), with a primary focus on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
