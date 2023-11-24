@@ -1,5 +1,6 @@
 # labodock_binder
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10202646.svg)](https://doi.org/10.5281/zenodo.10202646)
+ [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.10202646/)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10202646.svg)](https://doi.org/10.5281/zenodo.10202646)
+
 
 ## Introduction
 labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), with a primary focus on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
