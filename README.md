@@ -10,36 +10,31 @@ There are no instructions for Linux and Mac here since that would be too obvious
 
 ### Special instructions for Windows, warning, it would be much harder compared to using on Linux or Mac
 
-First of all, it should be noted that running such a notebook on Windows is much harder than on Linux since this notebook's fundamental structure is written in Shell and Python which is for Linux and Mac. To overcome this, we here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, luckily, this image has created and uploaded to the docker hub website. The image address on the docker hub is
+First of all, it should be noted that running such a notebook on Windows is much harder than on Linux since this notebook's fundamental structure is written in Shell and Python which is for Linux and Mac. To overcome this, we here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, luckily, this image has been created and uploaded to the docker hub website. The image address on the docker hub is
 
 ```
 qutesun/labodock_binder
 ```
 
 I assume you already installed **Docker-desktop**, and started it on the back.
-Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking.
-
-Before moving on, please make sure the top right kernel name is **notebook** instead of default **ipykernel**
-If not, please try to change it to **notebook**, if you can not find notebook as an option in the drop-down, you have to go back to the terminal where you have launched **docker**, and run 
+Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. And you have launched the container 
 
 ```
 docker pull qutesun/labodock_binder
-```
-Note, while doing this, you need keep your Docker-desktop still alive alongside
-
-After having downloaded this image, now let's turn it into an actual container that contains all packages our docking will rely on
-```
 docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
 ```
+You need to change my path to your path but do keep the last half after **:** the same. your browser will start a Jupyter Notebook interface and ask for a token pin, which you can copy from the backend in the **PowerShell** interface
 Now go to your default browser, and try 
 
 ```
 localhost:8888
 ```
+your browser will start a jupyter notebook interface and ask for a token pin agin, which you can copy from the backend in the **PowerShell** interface, it looks a bit crazy and messy there, but as long as you can capture any token-related string, that's it, just copy and paste it.
 
-your browser will start a jupyter notebook interface and ask for a token pin, which you can copy from the backend in the **PowerShell** interface, it looks a bit crazy and messy there, but as long as you can capture any token-related string, that's it, just copy and past it.
+Before moving on, please make sure the top right kernel name is **notebook** instead of default **ipykernel**
+You will  not find a **notebook** as an option in the drop-down, we have to create it first. If you confused about the naming here, notebook here is an environment name that I created for docking.
 
-I have told you that Windows is a bit tricky, there is still one more thing we need to do after having launched the notebook, that is we need to create a kernel name to allow jupyter lab can choose from a dropdown menu, to create this menu, inside the terminal of the browser terminal run 
+To create this menu, inside the terminal of the browser terminal run 
 
 ```
 conda init
@@ -52,7 +47,7 @@ finally, let's shut down the notebook, restart the docker again, by
 ```
 docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
 ```
-
+Paste the token as last time
 Now you should be able to select the kernel as **notebook** 
 
 
