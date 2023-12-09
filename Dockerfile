@@ -21,7 +21,7 @@ COPY wedock_win.ipynb ./
 # Copy the Jupyter configuration file to set the default kernel
 COPY jupyter_notebook_config.py /home/jovyan/.jupyter/
 
-# Set the password to 'iambatman'
+# Set the password to 'woshibianfuxia'
 ENV JUPYTER_PASSWORD=argon2:$argon2id$v=19$m=10240,t=10,p=8$/hFy3/7uNm3MYlwJN/nclg$L+e1t+O8SIN3tBd3N09NTw
 
 # Set the default notebook to 'wedock_win.ipynb'
