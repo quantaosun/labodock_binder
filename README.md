@@ -23,16 +23,16 @@ Also, I assume you already launched Windows **PowerShell** (The blue one) and ha
 docker pull qutesun/labodock_binder
 docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
 ```
-You need to change my path to your path but do keep the last half after **:** the same. your browser will start a Jupyter Notebook interface and ask for a token pin, which you can copy from the backend in the **PowerShell** interface
+You need to change my path to your path but do keep the last half after **:** the same. your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it, note you need to copy exactly what the pin is, no less no more letters.
 Now go to your default browser, and try 
 
 ```
 localhost:8888
 ```
-your browser will start a jupyter notebook interface and ask for a token pin agin, which you can copy from the backend in the **PowerShell** interface, it looks a bit crazy and messy there, but as long as you can capture any token-related string, that's it, just copy and paste it.
+your browser will start a jupyter notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface, it looks a bit crazy and messy there, but as long as you can capture any token-related string, that's it, just copy and paste it.
 
 Before moving on, please make sure the top right kernel name is **notebook** instead of default **ipykernel**
-You will  not find a **notebook** as an option in the drop-down, we have to create it first. If you confused about the naming here, notebook here is an environment name that I created for docking.
+You will  not find a **notebook** as an option in the drop-down, we have to create it first. If you are confused about the name here, **notebook** here is an environment name that I created for docking.
 
 To create this menu, inside the terminal of the browser terminal run 
 
@@ -42,7 +42,7 @@ source ~/.bashrc
 conda activate notebook
 python -m ipykernel install --user --name=notebook
 ```
-finally, let's shut down the notebook, restart the docker again, by
+finally, let's shut down the notebook, and restart the docker again, by
 
 ```
 docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
@@ -59,7 +59,7 @@ Now you should be able to select the kernel as **notebook**
 [![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
 
-## What happens once you click the launch binder badge ?
+## What happens once you click the launch binder badge?
 
 This Binder section is copied from https://discourse.jupyter.org/t/how-to-reduce-mybinder-org-repository-startup-time/4956 
 
