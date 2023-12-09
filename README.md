@@ -42,12 +42,9 @@ source ~/.bashrc
 conda activate notebook
 python -m ipykernel install --user --name=notebook
 ```
-finally, let's shut down the notebook, and restart the docker again, by
+finally, let's shut down the notebook, and restart the wedock_win.ipynb notebook again, note do not restart the container, just restart the docking notebook inside the container.
 
-```
-docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
-```
-Paste the token as last time
+
 Now you should be able to select the kernel as **notebook** 
 
 
