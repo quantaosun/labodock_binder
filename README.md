@@ -8,16 +8,16 @@
 
 There are no instructions for Linux and Mac here since that would be too obvious how to use it, you just create a new env with the provided env.yml file and start the Jupyter lab, that's it.
 
-### Special instructions for Windows, warning, it would be much harder compared to using on Linux or Mac
+### Use on Windows
 
-First of all, it should be noted that running such a notebook on Windows is much harder than on Linux since this notebook's fundamental structure is written in Shell and Python which is for Linux and Mac. To overcome this, we here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, luckily, this image has been created and uploaded to the docker hub website. The image address on the docker hub is
+We here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, luckily, this image has been created and uploaded to the docker hub website. The image address on the docker hub is
 
 ```
 qutesun/labodock_binder
 ```
 
 I assume you already installed **Docker-desktop**, and started it on the back.
-Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. And you have launched the container 
+Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. Run:
 
 ```
 docker pull qutesun/labodock_binder
@@ -29,24 +29,9 @@ Now go to your default browser, and try
 ```
 localhost:8888
 ```
-your browser will start a jupyter notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface, it looks a bit crazy and messy there, but as long as you can capture any token-related string, that's it, just copy and paste it.
+your browser will start a jupyter notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface.
 
-Before moving on, please make sure the top right kernel name is **notebook** instead of default **ipykernel**
-You will  not find a **notebook** as an option in the drop-down, we have to create it first. If you are confused about the name here, **notebook** here is an environment name that I created for docking.
-
-To create this menu, inside the terminal of the browser terminal run 
-
-```
-conda init
-source ~/.bashrc
-conda activate notebook
-python -m ipykernel install --user --name=notebook
-```
-finally, let's shut down the notebook, and restart the wedock_win.ipynb notebook again, note do not restart the container, just restart the docking notebook inside the container.
-
-
-Now you should be able to select the kernel as **notebook** 
-
+After the notebook has opened, please make sure the top right kernel name is **notebook** instead of default **ipykernel**.
 
 ## 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10208365.svg)](https://doi.org/10.5281/zenodo.10208365)
