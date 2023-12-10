@@ -10,7 +10,7 @@ There are no instructions for Linux and Mac here since that would be too obvious
 
 ### Use on Windows
 
-We here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, luckily, this image has been created and uploaded to the docker hub website. The image address on the docker hub is
+We here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, the image address on the docker hub is
 
 ```
 qutesun/labodock_binder
