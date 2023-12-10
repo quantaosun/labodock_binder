@@ -14,9 +14,9 @@
 
 ![image](https://github.com/quantaosun/labodock_binder/assets/75652473/89f48550-e862-4865-85e2-8848feb540da)
 
-### Step 4: Fill the port as ```8888```, and fill the **container path** as ```/home/jovyan/work```, these two should remain unchanged. Copy the folder path where you want to store the docking result and paste it inside **volume path**
+### Step 4: Fill the port as ```8888```, and fill the **container path** as ```/home/jovyan/work```, these two should remain unchanged. Copy the folder path where you want to store the docking result and paste it inside **host path**
 
-This step is critical, Double-check that everything is good, and pay attention to the two paths, The volume path is a Windows path of your local folder, and the container path is a Linux path that comes with a different style of format. /home/jovyan/work, the name jovyan is just a jupyter notebook community member name, just keep it like that, since no matter who starts this docker container, the path of this container is always named like this.
+This step is critical, Double-check that everything is good, and pay attention to the two paths, The host path is a Windows path of your local folder, and the container path is a Linux path that comes with a different style of format. /home/jovyan/work, the name jovyan is just a jupyter notebook community member name, just keep it like that, since no matter who starts this docker container, the path of this container is always named like this.
 
 ![image](https://github.com/quantaosun/labodock_binder/assets/75652473/a80073f9-51eb-4346-af8d-0817c27a7d77)
 
@@ -40,7 +40,7 @@ This step is critical, Double-check that everything is good, and pay attention t
 
 ![image](https://github.com/quantaosun/labodock_binder/assets/75652473/8eb29b2f-3dd6-4ad6-9fdc-7f25137699b2)
 
-### Step 10: Start docking, after having modified the three variables required, you click **Run** > **Run all**
+### Step 10: Start docking, after having modified the three variables required, you click **Run** > **Run All Cells**
 
 (The top right kernel should always be selected as **notebook** all the time, normally it will do it by default)
 
