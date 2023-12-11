@@ -9,11 +9,7 @@
 
 ### Compared to cloud manner which is much more flexible and easy to use. Windows version takes some time to learn how to operate properly, and once it is set, it is more robust and stable.
 
-We here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, the image address on the docker hub is
-
-```
-qutesun/labodock_binder
-```
+We here use **Docker** as a container, to mimic a Linux machine
 
 I assume you already installed **Docker-desktop**, and started it on the back.
 Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. Run:
@@ -22,15 +18,16 @@ Also, I assume you already launched Windows **PowerShell** (The blue one) and ha
 docker pull qutesun/labodock_binder
 docker run -p 8888:8888 -v ${PWD}:/home/jovyan/work qutesun/wemd
 ```
-Your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it, note you need to copy exactly what the pin is, no less no more letters.
+Your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it.
+
 Now go to your default browser, and try 
 
 ```
 localhost:8888
 ```
-your browser will start a jupyter notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface.
+your browser will start a Jupyter Notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface.
 
-After the notebook has opened, please make sure the top right kernel name is **notebook** instead of the default **ipykernel**.
+After having entered the browser interface, double click ```wedock_win.ipynb```, and you are ready to do the docking just as if you using the Binder badge above. 
 
 ## 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10208365.svg)](https://doi.org/10.5281/zenodo.10208365)
