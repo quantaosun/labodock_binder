@@ -7,7 +7,7 @@
 
 ## Use on Windows 
 
-### Compared to cloud manner which is much more flexible and easy to use. Windows version takes some time to learn how to operate properly, and once it was set, it is more robust and stable.
+### Compared to cloud manner which is much more flexible and easy to use. Windows version takes some time to learn how to operate properly, and once it is set, it is more robust and stable.
 
 We here use **Docker** as a container, to mimic a Linux machine, to build this container, you need an image, the image address on the docker hub is
 
@@ -20,9 +20,9 @@ Also, I assume you already launched Windows **PowerShell** (The blue one) and ha
 
 ```
 docker pull qutesun/labodock_binder
-docker run -p 8888:8888 -v C:\Users\sunqt\Desktop\20231209\labodock_binder:/home/jovyan/work qutesun/labodock_binder
+docker run -p 8888:8888 -v ${PWD}:/home/jovyan/work qutesun/wemd
 ```
-You need to change my path to your path but do keep the last half after **:** the same. your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it, note you need to copy exactly what the pin is, no less no more letters.
+Your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it, note you need to copy exactly what the pin is, no less no more letters.
 Now go to your default browser, and try 
 
 ```
@@ -30,7 +30,7 @@ localhost:8888
 ```
 your browser will start a jupyter notebook interface and ask for a token pin, which you have coped from the backend in the **PowerShell** interface.
 
-After the notebook has opened, please make sure the top right kernel name is **notebook** instead of default **ipykernel**.
+After the notebook has opened, please make sure the top right kernel name is **notebook** instead of the default **ipykernel**.
 
 ## 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10208365.svg)](https://doi.org/10.5281/zenodo.10208365)
@@ -49,7 +49,7 @@ Each time a user clicks a Binder link, these things happen:
 A slot (called a “pod”) is reserved on one of the cloud machines. This takes 1-2 seconds.
 Binder looks to see if a Docker image exists for that repository
 If it doesn’t, Binder must first build the image for that repo using repo2docker (this takes time)
-Binder looks for a built image on the machine the user will use
+The binder looks for a built image on the machine the user will use
 If it isn’t on the machine, Binder must first pull the image onto that machine (this takes time)
 Binder launches the user’s session. This includes:
 a small amount of time to start the “init pods to limit network access”,
@@ -66,7 +66,7 @@ labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/
 
 **Simplified Execution**: labodock_binder streamlines the process with one-click execution, eliminating the need for repetitive variable modifications.
 
-**High Safety Standard** :All code executed, data analyzed, and files uploaded during a Binder session, including any modifications to the docking notebook, are automatically deleted when the user logs off or becomes inactive for a few minutes. This ensures that there's no concern about temporary uploads, such as small molecule structures, being leaked. Additionally, Binder retains only the IP addresses associated with the service visits for 30 days, and this information is solely utilized to identify potential abuse of the Binder service. Rest assured that all modifications to the docking notebook are automatically cleared upon closing the browser window, and the platform prioritizes user privacy by minimizing data retention
+**High Safety Standard**:All code executed, data analyzed, and files uploaded during a Binder session, including any modifications to the docking notebook, are automatically deleted when the user logs off or becomes inactive for a few minutes. This ensures that there's no concern about temporary uploads, such as small molecule structures, being leaked. Additionally, Binder retains only the IP addresses associated with the service visits for 30 days, and this information is solely utilized to identify potential abuse of the Binder service. Rest assured that all modifications to the docking notebook are automatically cleared upon closing the browser window, and the platform prioritizes user privacy by minimizing data retention
 
 These enhancements collectively contribute to a more user-friendly and accessible experience. labodock_binder emerges as a versatile and convenient tool for users worldwide, requiring only internet availability—no Google account necessary.
 
