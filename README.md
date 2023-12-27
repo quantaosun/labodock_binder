@@ -36,6 +36,8 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 
 [![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
+## 百度平台用户
+请使用中国大陆手机号码注册登陆百度飞浆，在公开项目中搜索本仓库名称，复刻到本人名下，点击启动环境运行，在命令行内生成新环境后，开始在笔记本内完成对接。受制于百度平台的维护策略，在项目关闭后我们创建的环境将被清除，下次启动时请再次安装。
 
 ## What happens once you click the launch binder badge?
 
