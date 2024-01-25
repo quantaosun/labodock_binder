@@ -1,5 +1,10 @@
 # Labodock_binder
 
+## Acknowledgments
+
+- Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for docking on Google Colab.
+- Credits to the [Binder](https://mybinder.org/) project for developing the fantastic interactive Jupiter notebook used on web browsers.
+
 <img width="932" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/402c00b8-4d6a-4023-a891-e73a8ca3d3e3">
 
 
@@ -89,7 +94,4 @@ The first three cells are the only thing you should modify. From the top left, c
 
 **wedock.ipynb does not need any manual intervention, but for wedock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
 
-## Acknowledgments
 
-- Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for docking on Google Colab.
-- Credits to the [Binder](https://mybinder.org/) project for developing the fantastic interactive Jupiter notebook used on web browsers.
