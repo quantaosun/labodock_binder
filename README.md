@@ -66,7 +66,7 @@ a few seconds for BinderHub to notice,
 and finally, your browser needs to follow the redirect.
 
 ## Introduction
-labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), with a primary focus on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
+labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), primarily focusing on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
 
 **Seamless Access**: Unlike the original Google Colab login requirement, labodock_binder allows free access from Chrome, Firefox, and Safari, without the need for signup or login. This is made possible through the implementation of Binder technology (https://mybinder.org/).
 
@@ -92,6 +92,43 @@ These enhancements collectively contribute to a more user-friendly and accessibl
 
 The first three cells are the only thing you should modify. From the top left, click **Run** > **Run All Cells**, and the docking will start automatically. Your docked 3D interaction diagram will be at the bottom of the notebook.
 
-**wedock.ipynb does not need any manual intervention, but for wedock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
+**wedock.ipynb does not need manual intervention, but for wedock2.ipynb, if you wish to overlay two docked small molecules, you do need to specify several variables manually.**
+
+## If docking with a local PDB complex, for example, an in-house structure, change this native ligand section, Instead of downloading the native ligand from online, it directly greps out the native ligand from a local PDB
+
+```
+
+Keyword = Native_lig # @param {type: 'string'}
+
+def get_molblock(keyword: str) -> str:
+    url_path = PRT_FLD
+    pdb_file = os.path.join(NTV_FLD, Keyword + '.pdb')
+    sdf_file = os.path.join(NTV_FLD, keyword + '.sdf')
+    os.system(f'grep {keyword} {PDB_pdb_pFile} -O {pdb_file}')
+    os.system(f'obabel -ipdb {pdb_file} -osdf -O {sdf_file}')
+    molblock = [mol for mol in  Chem.SDMolSupplier(sdf_file) if mol is not None][0]
+    os.remove(sdf_file)
+    return molblock
+
+def correct_bond_order(inpt_list: list, temp: Chem.rdchem.Mol) -> None:
+    for inpt_file in inpt_list:
+        targ = AllChem.MolFromPDBFile(inpt_file)
+        cmol = AllChem.AssignBondOrdersFromTemplate(temp, targ)
+        pdbb = Chem.MolToPDBBlock(cmol, flavor=4)
+        with open(inpt_file, 'w') as oupt:
+            oupt.write(pdbb)
+
+true_id = Keyword[-3:] if len(Keyword) > 3 else Keyword
+print(f'+ RCSB PDB link: https://www.rcsb.org/ligand/{true_id}')
+
+ntv_pdb = Keyword.upper() + '.pdb'
+ntv_pdb_nFile = os.path.join(NTV_FLD, ntv_pdb)
+extract_entity(PDB_pdb_pFile, ntv_pdb_nFile, [Keyword, 'HETATM'])
+extract_chains(ntv_pdb_nFile)
+
+ntv_nFiles = sorted(glob.glob(NTV_FLD + '/' + Keyword + '_A.pdb'))
+ntv_smiles = get_molblock(true_id)
+correct_bond_order(ntv_nFiles, ntv_smiles)
+```
 
 
