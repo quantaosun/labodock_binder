@@ -18,10 +18,13 @@
 
 
 ## Use on Windows 
+[![My Skills](https://skillicons.dev/icons?i=windows&perline=3)](https://skillicons.dev)
 
 ### Compared to cloud manner which is much more flexible and easy to use. Windows version takes some time to learn how to operate properly, and once it is set, it is more robust and stable.
+[![My Skills](https://skillicons.dev/icons?i=docker&perline=3)](https://skillicons.dev)
 
 We here use **Docker** as a container, to mimic a Linux machine
+
 
 I assume you already installed **Docker-desktop**, and started it on the back.
 Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. Run:
