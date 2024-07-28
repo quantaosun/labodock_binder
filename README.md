@@ -1,4 +1,4 @@
-# Labodock_binder
+8# Labodock_binder
 [![My Skills](https://skillicons.dev/icons?i=apple,linux,anaconda&perline=3)](https://skillicons.dev)
 
 The most reliable manner is to install this reposititory to a local Linux/Mac with conda based on ```environment.yml``` provided. But if you do not have a Linux and/or Conda environment, you can
@@ -53,5 +53,4 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 - Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for docking on Google Colab.
 - Credits to the [Binder](https://mybinder.org/) project for developing the fantastic interactive Jupiter notebook used on web browsers.
 
-<img width="932" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/402c00b8-4d6a-4023-a891-e73a8ca3d3e3">
 
