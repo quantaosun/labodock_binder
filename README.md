@@ -50,18 +50,6 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 <img width="775" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/d0333255-36f2-46da-a105-5290bd91a063">
 
 
-## Usage
-**PDB_ID** is a four-letter code from the PDB bank website, for example, 3HTB
-
-**Native_lig** below means the native ligand of the co-crystal structure of the PDB bank, it can be found on the PDB website, it should always be a three-letter code, for example, JZ4
-
-**smiles** is the small molecule you want to dock, you can obtain this from ChemDraw, from **Edit** > **Copy as smiles**
-
-(In wedock2.ipynb, **smiles** variable was replaced by a CSV file containing multiple smiles)
-
-The first three cells are the only thing you should modify. From the top left, click **Run** > **Run All Cells**, and the docking will start automatically. Your docked 3D interaction diagram will be at the bottom of the notebook.
-
-
 ## Acknowledgments
 
 - Credits to the [Labodock](https://github.com/RyanZR/labodock) project for developing an excellent and open-source suite for docking on Google Colab.
