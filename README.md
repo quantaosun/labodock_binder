@@ -1,7 +1,7 @@
 # Labodock_binder
 [![My Skills](https://skillicons.dev/icons?i=apple,linux,anaconda&perline=3)](https://skillicons.dev)
 
-The most reliable manner is to install this reposititory to a local Linux/Mac with conda based on ```environment.yml```. provided. But if you do not have a Linux and/or Conda environment, you can
+The most reliable manner is to install this reposititory to a local Linux/Mac with conda based on ```environment.yml``` provided. But if you do not have a Linux and/or Conda environment, you can
 still use the cloud version below.
 
 ## Cloud 
@@ -14,11 +14,8 @@ still use the cloud version below.
 ## Use on Windows 
 [![My Skills](https://skillicons.dev/icons?i=windows,docker&perline=3)](https://skillicons.dev)
 
-We here use **Docker** as a container, to mimic a Linux machine
-
-
-I assume you already installed **Docker-desktop**, and started it on the back.
-Also, I assume you already launched Windows **PowerShell** (The blue one) and have navigated to a folder where you want to do docking. Run:
+Install **Docker-desktop**, and start it on the back.
+Launched Windows **PowerShell** (The blue one) and have navigate to a folder where you want to do docking. Run:
 
 ```
 docker pull qutesun/labodock_binder
@@ -42,8 +39,9 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 
 [![license](https://img.shields.io/badge/license-MIT-yellow)](https://github.com/quantaosun/labodock_binder/blob/main/LICENSE)
 
-## 百度平台用户
-请使用手机号码注册登陆百度飞浆，在公开项目中搜索本仓库名称，复刻到本人名下，点击启动环境运行，在命令行内生成新环境后，开始在笔记本内完成对接。受制于百度平台的维护策略，在项目关闭后我们创建的环境将被清除，下次启动时请再次安装。
+## 百度
+
+登陆百度飞浆，在公开项目中搜索本仓库名称，复刻到本人名下，点击启动环境运行，在命令行内生成新环境后，开始在笔记本内完成对接。受制于百度平台的维护策略，在项目关闭后我们创建的环境将被清除，下次启动时请再次安装。
 
 
 
