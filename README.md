@@ -45,35 +45,7 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 ## 百度平台用户
 请使用手机号码注册登陆百度飞浆，在公开项目中搜索本仓库名称，复刻到本人名下，点击启动环境运行，在命令行内生成新环境后，开始在笔记本内完成对接。受制于百度平台的维护策略，在项目关闭后我们创建的环境将被清除，下次启动时请再次安装。
 
-## What happens once you click the launch binder badge?
 
-This Binder section is copied from https://discourse.jupyter.org/t/how-to-reduce-mybinder-org-repository-startup-time/4956 
-
-Each time a user clicks a Binder link, these things happen:
-
-A slot (called a “pod”) is reserved on one of the cloud machines. This takes 1-2 seconds.
-Binder looks to see if a Docker image exists for that repository
-If it doesn’t, Binder must first build the image for that repo using repo2docker (this takes time)
-The binder looks for a built image on the machine the user will use
-If it isn’t on the machine, Binder must first pull the image onto that machine (this takes time)
-Binder launches the user’s session. This includes:
-a small amount of time to start the “init pods to limit network access”,
-a few seconds for the Jupyter process to start,
-a few seconds for BinderHub to notice,
-and finally, your browser needs to follow the redirect.
-
-## Introduction
-labodock_binder is an enhanced iteration of Labodock (https://github.com/RyanZR/labodock), primarily focusing on improved accessibility and user-friendliness. Notable modifications from Labodock version 2.0.0 include:
-
-**Seamless Access**: Unlike the original Google Colab login requirement, labodock_binder allows free access from Chrome, Firefox, and Safari, without the need for signup or login. This is made possible through the implementation of Binder technology (https://mybinder.org/).
-
-**Pre-built Images**: The labodock_binder image is pre-built. When a user clicks the link, the image is pulled from the cloud to the local browser, instead of installing all packages from scratch. This significantly accelerates the readiness for docking.
-
-**Simplified Execution**: labodock_binder streamlines the process with one-click execution, eliminating the need for repetitive variable modifications.
-
-**High Safety Standard**:All code executed, data analyzed, and files uploaded during a Binder session, including any modifications to the docking notebook, are automatically deleted when the user logs off or becomes inactive for a few minutes. This ensures that there's no concern about temporary uploads, such as small molecule structures, being leaked. Additionally, Binder retains only the IP addresses associated with the service visits for 30 days, and this information is solely utilized to identify potential abuse of the Binder service. Rest assured that all modifications to the docking notebook are automatically cleared upon closing the browser window, and the platform prioritizes user privacy by minimizing data retention
-
-These enhancements collectively contribute to a more user-friendly and accessible experience. labodock_binder emerges as a versatile and convenient tool for users worldwide, requiring only internet availability—no Google account necessary.
 
 <img width="775" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/d0333255-36f2-46da-a105-5290bd91a063">
 
