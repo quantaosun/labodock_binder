@@ -1,5 +1,6 @@
-8# Labodock_binder
-[![My Skills](https://skillicons.dev/icons?i=apple,linux,anaconda&perline=3)](https://skillicons.dev)
+# Labodock_binder
+
+[![MySkills](https://skillicons.dev/icons?i=apple,linux,anaconda&perline=3)](https://skillicons.dev)
 
 The most reliable manner is to install this reposititory to a local Linux/Mac with conda based on ```environment.yml``` provided. But if you do not have a Linux and/or Conda environment, you can
 still use the cloud version below.
