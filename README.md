@@ -1,5 +1,6 @@
 # Labodock_binder
 
+
 [![MySkills](https://skillicons.dev/icons?i=apple,linux,anaconda&perline=3)](https://skillicons.dev)
 
 The most reliable manner is to install this reposititory to a local Linux/Mac with conda based on ```environment.yml``` provided. But if you do not have a Linux and/or Conda environment, you can
@@ -20,7 +21,7 @@ Launched Windows **PowerShell** (The blue one) and have navigate to a folder whe
 
 ```
 docker pull qutesun/labodock_binder
-docker run -p 8888:8888 -v ${PWD}:/home/jovyan/work qutesun/wemd
+docker run -p 8888:8888 -v ${PWD}:/home/jovyan/work qutesun/labodock_binder
 ```
 Your **PowerShell** terminal will output some crazy lines that you probably can't read properly, among which there will be a token pin, just copy it.
 
@@ -48,6 +49,23 @@ After having entered the browser interface, double click ```wedock_win.ipynb```,
 
 <img width="775" alt="image" src="https://github.com/quantaosun/labodock_binder/assets/75652473/d0333255-36f2-46da-a105-5290bd91a063">
 
+## Deploy on digitalOcean
+
+**This is strongly recomanded if you want to access the docking service 24/7**
+
+<img width="1075" alt="image" src="https://github.com/user-attachments/assets/2335b56e-1da2-46f5-b198-a12cefc7191b" />
+
+Create an droplet with the docker image as indicated above, open the firewall for port `8888`, run the two lines of code to start the docking service
+
+```
+docker pull qutesun/labodock_binder
+
+docker run -p 8888:8888 -v "$(pwd)":/home/jovyan/work -e NB_UID=$(id -u) -e NB_GID=$(id -g) qutesun/labodock_binder start-notebook.sh --NotebookApp.ip='0.0.0.0' --NotebookApp.port=8888 --NotebookApp.token='batman'
+
+```
+Assume your ip address of DigitalOcean instance is `178.xxx.xxxx.xxx`, you should be able to acess the docking jupyter notebook via your browser via  `http://178.xxx.xxxx.xxx:8888/lab`, then input the password `batman` as defined in the docker run command (you can change it) 
+
+----------------------------Updated on April 2025 --------------------------------------
 
 ## Acknowledgments
 
