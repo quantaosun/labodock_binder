@@ -1,4 +1,4 @@
-name: notebook
+name: labodock_binder
 channels:
   - anaconda
   - conda-forge
@@ -265,4 +265,4 @@ dependencies:
   - pip:
       - rdkit==2023.9.1
       - meeko==0.5.0
-prefix: /srv/conda/envs
+#prefix: /srv/conda/envs
